@@ -20,9 +20,9 @@ print(finalResult, end=' ')
 
 '''
 /Users/a6003261/Documents/class/pythonProjects/venv/bin/python /Users/a6003261/Documents/class/pythonProjects/H2/sumrange.py
-Enter start integer1
-Enter stop integer5
-55 
+Enter start integer2
+Enter stop integer4
+29 
 Process finished with exit code 0
 '''
 
