@@ -2,19 +2,19 @@
 from random import randrange
 
 for i in range(1, 11, 1):
-    rand = randrange(1, 11)
+    rand = randrange(1, 7)
     print(rand)
 
 '''
 /Users/a6003261/Documents/class/pythonProjects/venv/bin/python /Users/a6003261/Documents/class/pythonProjects/H3/rand10.py
+6
+6
+1
 5
-8
-9
 4
-9
-7
-10
-8
+6
+1
+5
 2
 5
 
