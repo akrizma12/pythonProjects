@@ -1,32 +1,46 @@
 import turtle
 
-
-#actor is a turtle
-def drawSquare(actor, x, y, length):
-    actor.penup()
-    actor.goto(x, y)
-    actor.pendown()
-    for n in range(4):
-        actor.forward(length)
-        actor.left(90)
-
-
 window = turtle.Screen()
-turtle1 = turtle.Turtle()
-turtle1.hideturtle()
-turtle1.pencolor('white')
-turtle1.pensize(9)
+window.bgcolor('light green')
 
 len1 = 80
-startx = -len1 // 2
-starty = -len1 // 2
+x = -len1 // 2
+y = -len1 // 2
 
-drawSquare(turtle1, startx, starty, len1)
+turtle = turtle.Turtle()
+turtle.color("blue")
+turtle.pensize(3)
+turtle.penup()
+turtle.goto(x, y)
+turtle.pendown()
+
+turtle.forward(len1)
+turtle.left(90)
+turtle.forward(len1)
+turtle.left(90)
+turtle.forward(len1)
+turtle.left(90)
+turtle.forward(len1)
+turtle.left(90)
 
 len2 = 100
-startx = -len2 // 2
-starty = -len2 // 2
-drawSquare(turtle1, startx, starty, len2)
+x = -len2 // 2
+y = -len2 // 2
+
+turtle.color("blue")
+turtle.pensize(3)
+turtle.penup()
+turtle.goto(x, y)
+turtle.pendown()
+
+turtle.forward(len2)
+turtle.left(90)
+turtle.forward(len2)
+turtle.left(90)
+turtle.forward(len2)
+turtle.left(90)
+turtle.forward(len2)
+turtle.left(90)
 
 window.exitonclick()
 
