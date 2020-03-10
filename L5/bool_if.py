@@ -24,17 +24,17 @@ laterDate = 2
 
 
 def is_within(month, day, year):
-    if (year > laterYear or year < earlierYear):
+    if year > laterYear or year < earlierYear:
         return 0
-    elif (year >= earlierYear and year <= laterYear):
+    elif earlierYear <= year <= laterYear:
         return 1
-    elif (month > laterMonth or year < earlierMonth):
+    elif month > laterMonth or year < earlierMonth:
         return 0
-    elif (month >= earlierMonth and month <= laterMonth):
+    elif earlierMonth <= month <= laterMonth:
         return 1
-    elif (day > laterDate or day < earlierDate):
+    elif day > laterDate or day < earlierDate:
         return 0
-    elif (day >= earlierDate and day <= laterDate):
+    elif day >= earlierDate and day <= laterDate:
         return 1
 
 
