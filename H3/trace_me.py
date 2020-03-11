@@ -17,23 +17,23 @@
 
 num = int(input("enter number of floats: "))
 
-a = 0.0
-b = 0.0
+maxBetweenTwoNumbers = 0.0
+minBetweenTwoNumbers = 0.0
 c = 0.0
 
 for d in range(num):
     e = float(input("enter next float: "))
-    a = max(a, e)
-    b = min(b, e)
+    maxBetweenTwoNumbers = max(maxBetweenTwoNumbers, e)
+    minBetweenTwoNumbers = min(minBetweenTwoNumbers, e)
     c = c + e
     print("set breakpoint here...")
-    # LOCATION 1:
+    # maxBetweenTwoNumbers= 1.0, minBetweenTwoNumbers = 0.0, c = 1.0, d = 0, e = 1.0
     # list values of a, b, c, d, e at this point, each time through loop
 
-print(a)
-print(b)
+print(maxBetweenTwoNumbers)
+print(minBetweenTwoNumbers)
 print(c / num)
 
 print("set another breakpoint here...")
-# LOCATION 2:
+# maxBetweenTwoNumbers = 5.0, minBetweenTwoNumbers = -4.0, c = 3.0, d = 4, e = 5.0
 # list final values of a, b, c, d, e
